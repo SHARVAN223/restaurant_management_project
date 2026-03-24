@@ -6,4 +6,5 @@ from .serializers import Menu_Serializer
 
 
 def Menucategory(req):
-    data = Menucategory
+    data = Menucategory.objects.all()
+    serializer = Menu_Serializer
